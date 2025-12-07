@@ -1,70 +1,143 @@
-# 🖥️ Portfolio Desktop OS
+# 🖥️ **Portfolio Desktop OS**
 
-> A highly interactive, macOS-inspired desktop environment built with React, serving as a creative developer portfolio. Designed with a **Neo-Brutalism** aesthetic.
+### *A React-powered personal OS you can play with!*
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=flat&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6.svg?style=flat&logo=typescript)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC.svg?style=flat&logo=tailwind-css)
+Ever wished your portfolio felt less like a website and more like a computer you could actually *use*?
+Same. So I built one—fully draggable windows, desktop apps, music player, a terminal, and even a pixel editor.
 
-## ✨ Features
-
-### 🪟 Window Management System
-- **Draggable Windows**: Fully interactive windows with title bars and controls.
-- **Z-Index Handling**: focusing a window brings it to the front; intelligent stacking order.
-- **Minimizing/Closing**: Functional window controls.
-- **Dock**: Animated application dock with tooltips and active state indicators.
-
-### 🎨 Built-in "Apps"
-1.  **About Me, Experience, Projects, Skills**: Rich content viewers with custom UI components (timelines, skill bars, project cards).
-2.  **Terminal (`prath.exe`)**: A functional CLI. Try commands like `help`, `whoami`, `skills`, or `clear`.
-3.  **Pixel Studio**: A fully working 16x16 pixel art editor.
-    *   Draw with a palette of vibrant colors.
-    *   Undo/Redo capabilities.
-    *   **Export**: Saves your art as a real PNG file to your device.
-4.  **Music Player**: A floating widget with:
-    *   Rotating vinyl record animation with physics-based lighting.
-    *   Tonearm mechanics.
-    *   MP3 upload support (play your own local files!).
-5.  **Contact**: Quick actions for email, calendar, and social links.
-
-### ⚡ System Interactions
-- **Global Toast Notifications**: Feedback system for actions like "Email Copied" or "Image Saved".
-- **Hacker Mode (Easter Egg)**: Enter the Konami Code (`↑ ↑ ↓ ↓ ← → ← → B A`) to trigger a system-wide visual override.
-- **Live Clock**: Real-time date and time display in the menu bar.
-
-## 🛠️ Tech Stack
-
-- **Core**: React 19, TypeScript, Vite
-- **Styling**: Tailwind CSS (Neo-Brutalism design system)
-- **Animations**: Framer Motion (Spring physics for windows), CSS Keyframes
-- **Icons**: Lucide React
-- **Utils**: React Draggable
-
-## 🚀 Getting Started
-
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/yourusername/portfolio-os.git
-    ```
-
-2.  **Install dependencies**
-    ```bash
-    npm install
-    ```
-
-3.  **Run the development server**
-    ```bash
-    npm run dev
-    ```
-
-4.  Open `http://localhost:5173` in your browser.
-
-## 🎮 Easter Eggs
-
-- **Konami Code**: Type `ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, b, a` on your keyboard.
-- **Terminal**: Type `whoami` for a philosophical response.
+Inspired by **macOS**, styled with **Neo-Brutalism**, sprinkled with ✨ excessive UI love ✨
 
 ---
 
-*Designed and engineered by Prathamesh.*
+## 🌈 What is this thing?
+
+This is my personal developer portfolio—but disguised as a **desktop operating system** right inside your browser.
+
+Windows. Dock. Apps. Terminal. Easter eggs.
+Yes… it’s *that* extra.
+
+---
+
+## ✨ Features (that actually work)
+
+### 🪟 Move Stuff Around
+
+* Draggable windows (like, real ones)
+* Title bars, close/minimize buttons
+* Smart window focus
+* Animated dock, app indicators
+* You know… *like a computer*
+
+### 🧰 Apps built-in
+
+#### 🧑‍🚀 About – Experience – Projects – Skills
+
+Beautiful layouts with timelines, tech lists, project cards, and pixel-cute UI.
+
+#### 🖥️ Terminal — `prath.exe`
+
+Try:
+
+```
+help
+whoami
+projects
+skills
+clear
+```
+
+#### 🎨 Pixel Studio
+
+* 16×16 grid
+* Drawing tools
+* Undo/redo
+* Export real PNG files
+* Professional pixel masterpiece guaranteed 😎
+
+#### 🎧 Music Player
+
+* Vinyl animation (with physics lighting!)
+* Tone arm interaction
+* Upload your own MP3 files
+* Basically Spotify… if Spotify was a Web App from 2004
+
+#### 📬 Contact Panel
+
+* Mail
+* Calendar
+* Socials
+* Instant action buttons
+
+---
+
+## ⚡ System Stuff
+
+* Global toast notifications
+* Live clock
+* Hacker mode 🕶️
+* Sounds (optional)
+* Konami code support (what portfolio doesn’t need that?)
+
+---
+
+## 🛠️ Tech Stack
+
+| Category   | Tools                       |
+| ---------- | --------------------------- |
+| Framework  | React 19, TypeScript, Vite  |
+| Styling    | Tailwind (Neo-Brutalism UI) |
+| Animations | Framer Motion, CSS          |
+| Icons      | Lucide                      |
+| Utils      | React Draggable             |
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/yourusername/portfolio-os.git
+cd portfolio-os
+npm install
+npm run dev
+```
+
+Now open:
+`http://localhost:5173`
+
+Enjoy your new personal operating system.
+
+---
+
+## 🎮 Secret Stuff
+
+* Type **↑ ↑ ↓ ↓ ← → ← → B A**
+* Watch the world glitch
+* Hacker mode unlocked
+
+In the terminal:
+
+```
+whoami
+```
+
+(may cause existential crisis)
+
+---
+
+## 🧑‍💻 Why did I build this?
+
+I was bored of regular portfolios.
+So instead, I made an operating system.
+Because that’s reasonable.
+
+---
+
+## ⚖️ License
+
+MIT License – do whatever makes you happy ✨
+
+---
+
+> *Designed, coded, animated, debugged, and obsessively pixel-aligned by **Prathamesh**.*
+
+---
