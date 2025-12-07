@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, SkipBack, SkipForward, Volume2, Upload } from 'lucide-react';
 
-const DEFAULT_TRACK = "public/Papletwali.mp3";
+const DEFAULT_TRACK = "/Papletwali.mp3";
 
 const MusicPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
