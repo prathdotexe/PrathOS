@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
         <div className="shrink-0 flex flex-col gap-3 w-full sm:w-[160px]">
           <div className="relative aspect-square w-full rounded-xl overflow-hidden shadow-md bg-gray-100 group">
             <img
-              src="pic.jpeg"
+              src="/ProfileImg.jpeg"
               alt="Profile"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -28,7 +28,7 @@ const AboutMe: React.FC = () => {
 
           <button className="w-full bg-black text-white py-2.5 px-4 rounded-lg flex items-center justify-between transition-transform hover:scale-[1.02] active:scale-95 shadow-md">
             <a
-              href="resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full"

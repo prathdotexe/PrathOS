@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           //onClick={() => {
           //window.dispatchEvent(new CustomEvent('show-toast', { detail: { message: 'Downloading Resume...', type: 'info' } }));
           //}}
-          onClick={() => window.open('resume.pdf', '_blank')}
+          onClick={() => window.open('/Resume.pdf', '_blank')}
         />
         <QuickAction
           icon={Calendar}
