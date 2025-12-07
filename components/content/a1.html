@@ -1,0 +1,51 @@
+// write me a code that will make a square pop up using js on a plane webpage
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Pop Up</title>
+    <style>
+        #popupSquare {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            z-index: 1000;
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>  
+    <div id="overlay"></div>
+    <div id="popupSquare"></div>
+
+    <button onclick="showSquare()">Show Square</button>
+
+    <script>
+        function showSquare() {
+            document.getElementById('popupSquare').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        document.getElementById('overlay').onclick = function() {
+            document.getElementById('popupSquare').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        };
+    </script>
+</body>
+</html>

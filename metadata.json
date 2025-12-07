@@ -1,0 +1,5 @@
+{
+  "name": "Portfolio Desktop OS",
+  "description": "A macOS-inspired desktop portfolio interface with draggable windows and interactive dock.",
+  "requestFramePermissions": []
+}
