@@ -95,7 +95,7 @@ clear
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/yourusername/portfolio-os.git
+git clone (https://github.com/prathdotexe/PrathOS)
 cd portfolio-os
 npm install
 npm run dev
