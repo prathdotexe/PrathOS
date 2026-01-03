@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# FORMSPREE_ID=<your_formspree_id>  --- IGNORE ---
+
+# OWNER: Replace this ID with your Formspree ID after signing up at formspree.io --- IGNORE ---
+# FORMSPREE_ID=xpwyzvbd  --- IGNORE ---
+# End of Formspree values
