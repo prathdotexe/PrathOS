@@ -8,7 +8,8 @@ export enum WindowType {
   CONTACT = 'CONTACT',
   TERMINAL = 'TERMINAL',
   MUSIC = 'MUSIC',
-  PAINT = 'PAINT'
+  PAINT = 'PAINT',
+  GUESTBOOK = 'GUESTBOOK'
 }
 
 export interface WindowState {

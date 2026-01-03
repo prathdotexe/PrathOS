@@ -10,6 +10,7 @@ export const INITIAL_POSITIONS = {
   [WindowType.TERMINAL]: { x: 350, y: 100 },
   [WindowType.MUSIC]: { x: 100, y: 350 },
   [WindowType.PAINT]: { x: 450, y: 150 },
+  [WindowType.GUESTBOOK]: { x: window.innerWidth - 450, y: window.innerHeight - 550 },
 };
 
 // Vibrant "Gen Z" Neo-Brutalism Palette
@@ -55,6 +56,10 @@ export const WINDOW_THEMES = {
   },
   [WindowType.PAINT]: {
     headerColor: 'bg-[#FF9F1C]', // Bright Orange
+    textColor: 'text-black',
+  },
+  [WindowType.GUESTBOOK]: {
+    headerColor: 'bg-[#FFD60A]', // Bright Yellow
     textColor: 'text-black',
   },
 };
