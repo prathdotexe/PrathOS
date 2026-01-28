@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Rocket, Zap, Briefcase, Send, Terminal, Palette } from 'lucide-react';
+import { User, Rocket, Zap, Send, Terminal, Palette, Award, ShieldCheck, Trophy } from 'lucide-react';
 import { WindowType } from '../types';
 
 interface DockProps {
@@ -20,7 +20,8 @@ const DockItem: React.FC<{
             {label}
         </span>
     </div>
-    
+
+    {/* Active Indicator Bar */}
     {isActive && (
        <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-1.5 h-6 bg-black rounded-full" />
     )}
@@ -44,12 +45,14 @@ const DockItem: React.FC<{
 const Dock: React.FC<DockProps> = ({ onToggle, activeWindows }) => {
   const dockItems = [
     { id: WindowType.ABOUT, icon: User, label: 'About Me' },
-    { id: WindowType.PROJECTS, icon: Rocket, label: 'Projects' },
-    { id: WindowType.EXPERIENCE, icon: Briefcase, label: 'Experience' },
     { id: WindowType.SKILLS, icon: Zap, label: 'Skills' },
+    { id: WindowType.PROJECTS, icon: Rocket, label: 'Projects' },
+    { id: WindowType.CERTIFICATIONS, icon: ShieldCheck, label: 'Certifications' },
+    { id: WindowType.ACHIEVEMENTS, icon: Trophy, label: 'Achievements' },
     { id: WindowType.CONTACT, icon: Send, label: 'Contact' },
+    // Tools
     { id: WindowType.TERMINAL, icon: Terminal, label: 'Terminal' },
-    { id: WindowType.PAINT, icon: Palette, label: 'Pixel Studio' }
+    { id: WindowType.PAINT, icon: Palette, label: 'Pixel Studio' },
   ];
 
   return (
@@ -57,8 +60,9 @@ const Dock: React.FC<DockProps> = ({ onToggle, activeWindows }) => {
       <div className="pointer-events-auto flex flex-col gap-4 p-2">
         {dockItems.map((item, index) => (
             <React.Fragment key={item.id}>
-
-                 {index === 5 && <div className="h-[2px] w-8 bg-black/10 mx-auto rounded-full" />}
+                 {/* Visual Divider before tools */}
+                 {index === 6 && <div className="h-[2px] w-8 bg-black/10 mx-auto rounded-full" />}
+                 
                  <DockItem
                     icon={item.icon}
                     label={item.label}

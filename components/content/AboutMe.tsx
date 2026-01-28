@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
         <div className="shrink-0 flex flex-col gap-3 w-full sm:w-[160px]">
           <div className="relative aspect-square w-full rounded-xl overflow-hidden shadow-md bg-gray-100 group">
             <img
-              src="/ProfileImage.jpeg"
+              src="/Subject.png"
               alt="Profile"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -58,7 +58,7 @@ const AboutMe: React.FC = () => {
               <span className="font-bold text-black border-b-2 border-[#FCA5A5]">
                 Prathamesh
               </span>
-              , a software engineer dedicated to developing scalable, reliable, and user-centric digital solutions.
+              , a software engineer dedicated to developing scalable, reliable and user-centric digital solutions.
             </p>
 
             <p>

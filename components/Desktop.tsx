@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { User, Briefcase, Rocket, Zap, Send, Terminal, Palette, MessageSquare } from 'lucide-react';
+import { User, Briefcase, Rocket, Zap, Send, Terminal, Palette, MessageSquare, Award, ShieldCheck, Trophy } from 'lucide-react';
 import { WindowType, WindowState } from '../types';
 import { INITIAL_POSITIONS, WINDOW_THEMES } from '../constants';
 import MenuBar from './MenuBar';
@@ -9,6 +9,8 @@ import Background from './Background';
 import AboutMe from './content/AboutMe';
 import Projects from './content/Projects';
 import Experience from './content/Experience';
+import Certifications from './content/Certifications';
+import Achievements from './content/Achievements';
 import Skills from './content/Skills';
 import Contact from './content/Contact';
 import TerminalApp from './content/Terminal';
@@ -88,7 +90,7 @@ const Desktop: React.FC = () => {
         let newWindows = [...prev];
         const openWindows = newWindows.filter(w => w.isOpen);
 
-        if (openWindows.length >= 2 && id !== WindowType.GUESTBOOK) {
+        if (openWindows.length >= 4 && id !== WindowType.GUESTBOOK) {
             const sortedByZ = [...openWindows].sort((a, b) => a.zIndex - b.zIndex);
             const toClose = sortedByZ[0]; 
             newWindows = newWindows.map(w => w.id === toClose.id ? { ...w, isOpen: false } : w);
@@ -124,6 +126,8 @@ const Desktop: React.FC = () => {
       case WindowType.ABOUT: return <AboutMe />;
       case WindowType.PROJECTS: return <Projects />;
       case WindowType.EXPERIENCE: return <Experience />;
+      case WindowType.CERTIFICATIONS: return <Certifications />;
+      case WindowType.ACHIEVEMENTS: return <Achievements />;
       case WindowType.SKILLS: return <Skills />;
       case WindowType.CONTACT: return <Contact />;
       case WindowType.TERMINAL: return <TerminalApp />;
@@ -141,6 +145,10 @@ const Desktop: React.FC = () => {
         return { title: 'Projects', icon: Rocket, theme: WINDOW_THEMES[WindowType.PROJECTS] };
       case WindowType.EXPERIENCE: 
         return { title: 'Experience', icon: Briefcase, theme: WINDOW_THEMES[WindowType.EXPERIENCE] };
+      case WindowType.CERTIFICATIONS: 
+        return { title: 'Certifications', icon: ShieldCheck, theme: WINDOW_THEMES[WindowType.CERTIFICATIONS] };
+      case WindowType.ACHIEVEMENTS: 
+        return { title: 'Achievements', icon: Trophy, theme: WINDOW_THEMES[WindowType.ACHIEVEMENTS] };
       case WindowType.SKILLS: 
         return { title: 'Skills', icon: Zap, theme: WINDOW_THEMES[WindowType.SKILLS] };
       case WindowType.CONTACT: 

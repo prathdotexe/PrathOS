@@ -1,12 +1,14 @@
 import { WindowType } from './types';
 
-// Initial positions (shifted right to accommodate left dock)
+// Initial positions
 export const INITIAL_POSITIONS = {
   [WindowType.ABOUT]: { x: 100, y: 40 },
   [WindowType.PROJECTS]: { x: 140, y: 80 },
   [WindowType.EXPERIENCE]: { x: 180, y: 120 },
-  [WindowType.SKILLS]: { x: 220, y: 160 },
-  [WindowType.CONTACT]: { x: 260, y: 200 },
+  [WindowType.CERTIFICATIONS]: { x: 200, y: 140 },
+  [WindowType.ACHIEVEMENTS]: { x: 220, y: 160 },
+  [WindowType.SKILLS]: { x: 240, y: 180 },
+  [WindowType.CONTACT]: { x: 280, y: 220 },
   [WindowType.TERMINAL]: { x: 350, y: 100 },
   [WindowType.MUSIC]: { x: 100, y: 350 },
   [WindowType.PAINT]: { x: 450, y: 150 },
@@ -35,7 +37,15 @@ export const WINDOW_THEMES = {
     textColor: 'text-black',
   },
   [WindowType.EXPERIENCE]: {
-    headerColor: 'bg-[#6EE7B7]', // Fresh Mint Green
+    headerColor: 'bg-gray-200', 
+    textColor: 'text-black',
+  },
+  [WindowType.CERTIFICATIONS]: {
+    headerColor: 'bg-[#6EE7B7]', // Mint Green
+    textColor: 'text-black',
+  },
+  [WindowType.ACHIEVEMENTS]: {
+    headerColor: 'bg-[#93C5FD]', // Sky Blue
     textColor: 'text-black',
   },
   [WindowType.SKILLS]: {
