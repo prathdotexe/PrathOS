@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
         <div className="shrink-0 flex flex-col gap-3 w-full sm:w-[160px]">
           <div className="relative aspect-square w-full rounded-xl overflow-hidden shadow-md bg-gray-100 group">
             <img
-              src="/ProfileImg.jpeg"
+              src="/ProfileImage.jpeg"
               alt="Profile"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -54,27 +54,27 @@ const AboutMe: React.FC = () => {
           <div className="space-y-3 font-body text-base text-gray-700 font-medium leading-relaxed">
 
             <p>
-              Hey! I'm{" "}
+              I am{" "}
               <span className="font-bold text-black border-b-2 border-[#FCA5A5]">
                 Prathamesh
               </span>
-              —a developer who enjoys turning ideas into clean, reliable, and intuitive software.
+              , a software engineer dedicated to developing scalable, reliable, and user-centric digital solutions.
             </p>
 
             <p>
-              I build systems where{" "}
+              I specialize in the intersection of{" "}
               <span className="font-bold text-black underline underline-offset-[3px] decoration-[#A78BFA]">
                 distributed systems
               </span>{" "}
-              meet{" "}
+              and{" "}
               <span className="font-bold text-black underline underline-offset-[3px] decoration-[#A78BFA]">
                 generative AI
               </span>
-              , focusing on{" "}
-              <span className="font-bold text-black">robust backend architectures</span>{" "}
-              and{" "}
+              , with a core focus on architecting{" "}
+              <span className="font-bold text-black">robust backend systems</span>{" "}
+              and delivering{" "}
               <span className="font-bold text-black border-b-2 border-[#FCA5A5]">
-                intuitive user experiences
+                seamless user experiences
               </span>
               .
             </p>
