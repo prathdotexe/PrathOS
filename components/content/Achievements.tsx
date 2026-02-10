@@ -12,20 +12,36 @@ interface Achievement {
 
 const ACHIEVEMENTS: Achievement[] = [
   {
-    title: "Global Hackathon Winner",
-    org: "TechNexus 2024",
-    date: "Dec 2024",
-    description: "Won 1st place among 500+ teams for building a decentralized identity solution.",
+    title: "AI Application Developer",
+    org: "Independent / Academic Projects",
+    date: "2024",
+    description: "Developed multiple AI-powered, production-ready applications addressing real-world problem statements.",
     icon: Trophy,
-    color: "bg-[#FCD34D]"
+    color: "bg-[#86EFAC]"
   },
   {
-    title: "Open Source Contributor",
-    org: "Hacktoberfest",
-    date: "Oct 2023",
-    description: "Top 1% contributor for a major UI library, merged 12 critical pull requests.",
+    title: "Industrial Automation Developer",
+    org: "Tata Motors Chennai Plant",
+    date: "2024",
+    description: "Designed and implemented automation dashboards and applications deployed in the Tata Motors Chennai plant environment.",
     icon: Medal,
-    color: "bg-[#C4B5FD]"
+    color: "bg-[#7DD3FC]"
+  },
+  {
+    title: "Hackathon Finalist & Competitor",
+    org: "IIT Delhi & IIT Ropar",
+    date: "2023–2024",
+    description: "Participated and secured ranks in multiple hackathons conducted by IIT Delhi and IIT Ropar.",
+    icon: Trophy,
+    color: "bg-[#FCA5A5]"
+  },
+  {
+    title: "Published Research Author",
+    org: "IOSR Journals",
+    date: "2023",
+    description: "Research paper accepted titled “Operating Systems: CPU Scheduling.”",
+    icon: Medal,
+    color: "bg-[#FDBA74]"
   }
 ];
 
@@ -34,19 +50,19 @@ const Achievements: React.FC = () => {
     <div className="h-full flex flex-col overflow-y-auto custom-scrollbar bg-white p-6">
       <div className="mb-8">
         <h2 className="font-heading font-black text-xs uppercase tracking-[0.2em] text-gray-400 mb-6 flex items-center gap-2">
-            <Star size={14} className="text-[#FFD60A]" fill="currentColor" /> 
-            Hall of Fame
+          <Star size={14} className="text-[#FFD60A]" fill="currentColor" />
+          Hall of Fame
         </h2>
-        
+
         <div className="grid grid-cols-1 gap-4">
           {ACHIEVEMENTS.map((ach, idx) => (
-            <div 
+            <div
               key={idx}
               className="group relative bg-white border-[3px] border-black rounded-xl p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform"
             >
               <div className="flex gap-4 items-start relative z-10">
                 <div className={`shrink-0 w-12 h-12 ${ach.color} border-2 border-black rounded-lg flex items-center justify-center shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] group-hover:rotate-12 transition-transform`}>
-                   <ach.icon size={24} className="text-black" />
+                  <ach.icon size={24} className="text-black" />
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-1">
