@@ -1,22 +1,10 @@
 import React from 'react';
 import { Layout, Server, Brain, Terminal, Code2, Globe, Cpu, GitBranch } from 'lucide-react';
 
-const SkillItem: React.FC<{ name: string; level: number; color: string }> = ({ name, level, color }) => (
-  <div className="mb-3 last:mb-0 group">
-    <div className="flex justify-between items-end mb-1">
+const SkillItem: React.FC<{ name: string }> = ({ name }) => (
+  <div className="mb-3 last:mb-0">
+    <div className="mb-1">
       <span className="font-heading font-bold text-xs uppercase tracking-wide text-black group-hover:text-gray-700 transition-colors">{name}</span>
-      <span className="font-mono text-[10px] font-bold text-gray-500">{level}%</span>
-    </div>
-    <div className="h-2.5 w-full bg-gray-100 rounded-full border border-black overflow-hidden relative shadow-[1px_1px_0px_0px_rgba(0,0,0,0.1)]">
-      <div
-        className={`h-full absolute top-0 left-0 ${color} border-r border-black transition-all duration-1000 ease-out group-hover:brightness-110`}
-        style={{ width: `${level}%` }}
-      />
-      {/* Striped Pattern Overlay */}
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{ backgroundImage: 'linear-gradient(45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent)', backgroundSize: '8px 8px' }}
-      ></div>
     </div>
   </div>
 );
@@ -43,7 +31,7 @@ const SkillCategory: React.FC<{
     {/* Body */}
     <div className="p-4 bg-white flex-1">
       {skills.map(s => (
-        <SkillItem key={s.name} name={s.name} level={s.level} color={color} />
+        <SkillItem key={s.name} name={s.name} />
       ))}
     </div>
   </div>
