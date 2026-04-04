@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Desktop</title>
+
+    <!-- SEO & Meta -->
+    <title>Prathamesh Dhembre | Full Stack Developer & AI Builder</title>
+    <meta name="description" content="Prathamesh Dhembre — Full-stack developer and AI engineer building scalable apps, intelligent tools, and polished interfaces. Explore projects, skills, and experience in an interactive desktop portfolio." />
+    <meta name="author" content="Prathamesh Dhembre" />
+    <meta name="keywords" content="Prathamesh Dhembre, full-stack developer, AI engineer, React, Next.js, TypeScript, portfolio, web developer, UI engineer" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Prathamesh Dhembre | Full Stack Developer & AI Builder" />
+    <meta property="og:description" content="An interactive desktop portfolio showcasing full-stack development, AI apps, dashboards, and UI engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/Subject.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prathamesh Dhembre | Full Stack Developer & AI Builder" />
+    <meta name="twitter:description" content="An interactive desktop portfolio showcasing full-stack development, AI apps, dashboards, and UI engineering." />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -13,6 +30,9 @@
             fontFamily: {
               heading: ['Space Grotesk', 'sans-serif'],
               body: ['Outfit', 'sans-serif'],
+            },
+            screens: {
+              'xs': '375px',
             }
           }
         }
@@ -20,35 +40,8 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Outfit', sans-serif;
-        overflow: hidden;
-        background-color: #FDF0D5;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #000;
-        border-radius: 99px;
-      }
-      .dark ::-webkit-scrollbar-thumb {
-        background: #fff;
-      }
-      * {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      .will-change-transform {
-        will-change: transform;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
   <script type="importmap">
 {
   "imports": {
@@ -61,7 +54,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
