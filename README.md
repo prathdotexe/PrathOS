@@ -1,143 +1,194 @@
-# 🖥️ **Portfolio Desktop OS**
+# 🖥️ PrathOS Portfolio
 
-### *A React-powered personal OS you can play with!*
+### *A personal portfolio reimagined as an interactive desktop OS.*
 
-Ever wished your portfolio felt less like a website and more like a computer you could actually *use*?
-Same. So I built one—fully draggable windows, desktop apps, music player, a terminal, and even a pixel editor.
+Most portfolios tell you what someone can do.
 
-Inspired by **macOS**, styled with **Neo-Brutalism**, sprinkled with ✨ excessive UI love ✨
+This one lets you **open it, move it around, explore it, and play with it**.
 
----
+**PrathOS** is my personal developer portfolio built as a desktop-style web experience — complete with draggable windows, interactive apps, motion-rich UI, project panels, a terminal, and creative extras that make the site feel more like a tiny operating system than a traditional webpage.
 
-## 🌈 What is this thing?
-
-This is my personal developer portfolio—but disguised as a **desktop operating system** right inside your browser.
-
-Windows. Dock. Apps. Terminal. Easter eggs.
-Yes… it’s *that* extra.
+Inspired by desktop workflows, styled with a playful neo-brutalist personality, and built to showcase both **engineering** and **interface design**.
 
 ---
 
-## ✨ Features (that actually work)
+## 🌟 What is PrathOS?
 
-### 🪟 Move Stuff Around
+PrathOS is my interactive portfolio website, designed as a browser-based desktop environment.
 
-* Draggable windows (like, real ones)
-* Title bars, close/minimize buttons
-* Smart window focus
-* Animated dock, app indicators
-* You know… *like a computer*
+Instead of scrolling through a static page, visitors can explore my work through floating windows, open different “apps,” check out projects, browse my skills, use the terminal, and interact with fun features like Pixel Studio.
 
-### 🧰 Apps built-in
+It’s a portfolio — but with a little more curiosity, motion, and personality.
 
-#### 🧑‍🚀 About – Experience – Projects – Skills
+---
 
-Beautiful layouts with timelines, tech lists, project cards, and pixel-cute UI.
+## ✨ Core Features
 
-#### 🖥️ Terminal — `prath.exe`
+### 🪟 Desktop-style interface
 
-Try:
+- Draggable window-based layout
+- Distinct app panels for major portfolio sections
+- Focused window interactions
+- Desktop-inspired visual structure
+- Smooth, animated transitions
 
-```
+### 👨‍💻 Portfolio sections
+
+- About Me
+- Skills
+- Experience
+- Projects
+- Certifications
+- Achievements
+- Contact
+
+### 🖥️ Interactive Terminal
+
+A built-in terminal-style panel that adds a more playful way to explore the portfolio.
+
+Try commands like:
+
+```bash
 help
 whoami
-projects
+about
 skills
+projects
 clear
 ```
 
-#### 🎨 Pixel Studio
+### 🎨 Pixel Studio
 
-* 16×16 grid
-* Drawing tools
-* Undo/redo
-* Export real PNG files
-* Professional pixel masterpiece guaranteed 😎
+A mini creative tool built into the experience for interactive fun and visual personality.
 
-#### 🎧 Music Player
+### 🚀 Featured projects
 
-* Vinyl animation (with physics lighting!)
-* Tone arm interaction
-* Upload your own MP3 files
-* Basically Spotify… if Spotify was a Web App from 2004
+The portfolio highlights real builds including:
 
-#### 📬 Contact Panel
+- **PrathOS**
+- **Astra AI**
+- **Clineta CRM**
+- **CodeCollab**
+- **Sprout**
 
-* Mail
-* Calendar
-* Socials
-* Instant action buttons
+Each project includes code and/or live deployment links where available.
 
----
+### 🌙 Themed experience
 
-## ⚡ System Stuff
-
-* Global toast notifications
-* Live clock
-* Hacker mode 🕶️
-* Sounds (optional)
-* Konami code support (what portfolio doesn’t need that?)
+- Light/dark mode support
+- Custom typography
+- Desktop-inspired UI styling
+- Motion-enhanced interactions
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category   | Tools                       |
-| ---------- | --------------------------- |
-| Framework  | React 19, TypeScript, Vite  |
-| Styling    | Tailwind (Neo-Brutalism UI) |
-| Animations | Framer Motion, CSS          |
-| Icons      | Lucide                      |
-| Utils      | React Draggable             |
+| Category | Tools |
+|---|---|
+| Framework | React |
+| Build Tool | Vite |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Interaction | react-draggable |
+| Icons/UI | Lucide + custom component styling |
 
 ---
 
-## 🚀 Installation
+## 📂 Featured Work
+
+### PrathOS
+
+My portfolio operating system — a playful browser desktop that turns a personal site into an interactive experience.
+
+### Astra AI
+
+An AI-powered project focused on intelligent workflows and user-facing functionality.
+
+### Clineta CRM
+
+A CRM-oriented web product with a strong application-style interface.
+
+### CodeCollab
+
+A collaborative development-focused project built around teamwork and productivity.
+
+### Sprout
+
+An AI-powered plant identification and care assistant.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository and run it locally:
 
 ```bash
-git clone (https://github.com/prathdotexe/PrathOS)
-cd portfolio-os
+git clone https://github.com/prathdotexe/PrathOS
+cd PrathOS
 npm install
 npm run dev
 ```
 
-Now open:
-`http://localhost:5173`
+Then open the local development URL shown in your terminal, typically:
 
-Enjoy your new personal operating system.
-
----
-
-## 🎮 Secret Stuff
-
-* Type **↑ ↑ ↓ ↓ ← → ← → B A**
-* Watch the world glitch
-* Hacker mode unlocked
-
-In the terminal:
-
-```
-whoami
+```bash
+http://localhost:5173
 ```
 
-(may cause existential crisis)
+---
+
+## 🔗 Live Links
+
+- **Portfolio:** <https://prathos.vercel.app/>
+- **GitHub:** <https://github.com/prathdotexe/PrathOS>
+
+Other linked projects visible from the portfolio include:
+
+- Astra AI
+- Clineta CRM
+- CodeCollab
+- Sprout
 
 ---
 
-## 🧑‍💻 Why did I build this?
+## 💡 Why I built this
 
-I was bored of regular portfolios.
-So instead, I made an operating system.
-Because that’s reasonable.
+I wanted a portfolio that felt more memorable than a typical landing page.
 
----
+As a developer who enjoys building interactive interfaces, animated experiences, and product-style UIs, I wanted my portfolio itself to reflect that mindset — not just describe it.
 
-## ⚖️ License
+So instead of making a regular website, I built a desktop.
 
-MIT License – do whatever makes you happy ✨
+Because honestly, that felt more like me.
 
 ---
 
-> *Designed, coded, animated, debugged, and obsessively pixel-aligned by **Prathamesh**.*
+## 🎯 Goals of this project
+
+- Showcase my projects in a more immersive way
+- Blend frontend engineering with interface design
+- Make the portfolio feel interactive, not passive
+- Build something fun without losing professionalism
+- Create an experience people actually remember
 
 ---
+
+## 📬 Contact
+
+If you'd like to connect, collaborate, or just explore the project:
+
+- **Portfolio:** <https://prathos.vercel.app/>
+- **GitHub:** <https://github.com/prathdotexe/>
+- **LinkedIn:** <https://www.linkedin.com/in/dprathamessh/>
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+> Designed, developed, animated, and obsessively arranged by **Prathamesh Dhembre**.
